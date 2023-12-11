@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    
+    
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+    font-family: 'Poppins', sans-serif;
+    height: 4rem;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+    height: 3.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.greeting{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1.3rem; 
+}
+
+.project--title{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.project--description{
+    padding: 8px;
+}
+
+.project--status{
+    padding: 8px;
+    color: green;
+}
+
+.projects--container{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.card-body{
+    width: 100%;
+}
+
+.signin-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    background-color: #f8f9fa;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .sign-in-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .sign-in {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
   }
-}
+  
+  .sign-in:hover {
+    background-color: #0056b3;
+  }
+  
+  .omniport {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  @media (max-width: 600px) {
+    .sign-in-description {
+      font-size: 20px;
+    }
+  
+    .sign-in {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }
